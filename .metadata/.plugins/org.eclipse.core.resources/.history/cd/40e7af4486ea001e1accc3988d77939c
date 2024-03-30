@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+iframe {
+	height: 100px;
+	width: 500px;
+}
+
+</style>
+</head>
+<body>
+	<div>
+		<h1>Product Details</h1>
+	</div>
+	<div>
+		<table border="5">
+			<thead>
+				<tr>
+					<th>ID:</th>
+					<th>Name:</th>
+					<th>MFD:</th>
+					<th>RFD:</th>
+					<th>Uses:</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="product:${product}">
+				<td th:text="${product.id}"></td>
+                 <td th:text="${product.name}"></td>
+                 <td th:text="${product.mfd}"></td>
+                  <td th:text="${product.efd}"></td>
+                 <td th:text="${product.uses}"></td>
+                  </tr>
+				</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<h1>Student Administration</h1>
+	</div>
+	<div id="navcontainer">
+		<nav>
+			<a href="/api/nav/addStudent" >Add Student</a> 
+						<a href="/api/nav/updateStudent" >Update Student</a>
+			<a href="/api/nav/deleteStudent">delete Student</a> 
+			<a href="/api/nav/getStudent" >get Student</a>
+		</nav>
+	</div>
+
+<div>
+<h1>Update the Student</h1>
+</div>
+
+
+<div>
+<form action="api/updateStudent" method="post">
+<input type="hidden" name="_method" value="update"/>
+<label>Enter the id:</label>
+<input type="text" name="id" class="update" />
+<br>
+<label>Enter the name:</label>
+<input type="text" name="name" class="update" />
+<br>
+<label>Enter the USN</label>
+<input type="text" name="usn" class="update" />
+<br>
+<label>Enter the marks</label>
+<input type="text" name="marks" class="update" />
+<br>
+<input type="submit" name="submit" value="update"/>
+</form>
+</div>
+
+
+</body>
+</html>

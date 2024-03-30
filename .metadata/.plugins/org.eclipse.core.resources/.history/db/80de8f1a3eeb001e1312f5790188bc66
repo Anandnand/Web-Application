@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>Employee Management Information</div>
+
+	<div>
+		<nav>
+			<a href="/api/nav/addEmployee">Add Employee</a> <a
+				href="/api/nav/updateEmployee">update Employee</a> <a
+				href="/api/nav/getEmployee">get Employee</a> <a
+				href="/api/nav/deleteEmployee">delete Employee</a>
+		</nav>
+	</div>
+	<div>
+		<h1>Add Employee</h1>
+	</div>
+	
+	<div>
+	<form action="/api/addEmplyee" method="post">
+	<label>Enter the id</label>
+	<input type="text" name="id" class="add"  placeholder="enter the id">
+	<br>
+	<label>Enter the name</label>
+	<input type="text" name="name" class="add"  placeholder="enter the name">
+	<br>
+	<input type="submit" name="submit" class="add" value="Add Student">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>

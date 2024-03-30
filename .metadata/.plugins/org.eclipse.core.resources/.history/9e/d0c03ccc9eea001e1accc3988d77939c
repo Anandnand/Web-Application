@@ -1,0 +1,6 @@
+@charset "ISO-8859-1";
+.navcontainer{
+	background-color:blue;
+	padding :15px;
+	
+}

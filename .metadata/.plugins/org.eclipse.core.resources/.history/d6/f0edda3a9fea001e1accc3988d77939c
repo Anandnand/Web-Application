@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+.navcontainer{
+	background-color:yellow;
+	display:inline-block;
+	padding :15px;
+}
+
+#home{
+	display:flex;
+	flex-direction:row;
+	justify-content:centre;
+	
+}

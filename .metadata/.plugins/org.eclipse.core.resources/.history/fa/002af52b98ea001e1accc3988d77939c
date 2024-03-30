@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<nav>
+			<a href="/api/nav/addPerson" target="_blank">Add Person</a> <a
+				href="/api/nav/updatePerson" target="_blank">update Person</a> <a
+				href="/api/nav/deletePerson" target="_blank">delete Person</a> <a
+				href="/api/nav/getPerson" target="_blank">get Person</a>
+		</nav>
+	</div>
+	<diV>
+		<h1>Update Person</h1>
+	</diV>
+	
+	<div>
+	<form action="/api/updatePerson" method="post">
+	<input type="hidden" name="_method"  value="put"/>
+    <label>Enter the id</label>
+    <input type="text"  name="id"  class="add" />
+    <label>Enter the name</label>
+    <input type="text"  name="name"  class="add" />
+    <label>Enter the email</label>
+    <input type="text"  name="email"  class="add" />	
+    <label>Enter the number</label>
+    <input type="text"  name="number"  class="add" />		
+	</form>
+	</div>
+
+</body>
+</html>

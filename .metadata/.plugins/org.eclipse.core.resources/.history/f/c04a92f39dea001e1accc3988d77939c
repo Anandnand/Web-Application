@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<nav>
+			<a href="/api/nav/addPerson" target="_blank">Add Person</a> <a
+				href="/api/nav/updatePerson" target="_blank">update Person</a> <a
+				href="/api/nav/deletePerson" target="_blank">delete Person</a> <a
+				href="/api/nav/getPerson" target="_blank">get Person</a>
+		</nav>
+	</div>
+
+<div>
+View Person
+</div>
+<form action=".nav/getPerson">
+	<div>
+		<table border="5">
+			<thead>
+				<tr>
+					<th>Id:</th>
+					<th>Name:</th>
+					<th>Email:</th>
+					<th>Number:</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr th:each=person:${person}>
+					<th th:each=${person.id}></th>
+					<th th:each=${person.name}></th>
+					<th th:each=${person.email}></th>
+					<th th:each=${person.number}></th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</form>
+	
+</body>
+</html>

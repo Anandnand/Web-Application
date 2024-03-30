@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import com.example.demo.entity.Student;
+
+public interface StudentService {
+
+	String addStudent(Student s);
+
+	Student getStudent(int id);
+
+	String updateStudent(Student s);
+
+}

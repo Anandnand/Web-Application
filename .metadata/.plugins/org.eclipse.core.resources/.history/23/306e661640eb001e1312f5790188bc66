@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>Employee Management Information</div>
+
+	<div>
+		<nav>
+			<a href="/api/nav/addEmployee">Add Employee</a> <a
+				href="/api/nav/updateEmployee">update Employee</a> <a
+				href="/api/nav/getEmployee">get Employee</a> <a
+				href="/api/nav/deleteEmployee">delete Employee</a>
+		</nav>
+	</div>
+	<div>
+		<h1>view Employee</h1>
+	</div>
+
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Id:</th>
+					<th>Name:</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each=Employee:${Employee}>
+					<td th:text=${Employee.id}></td>
+					<td th:text=${Employee.name}>Name:</td>
+
+				</tr>
+			</tbody>
+			
+		</table>
+	</div>
+
+</body>
+</html>

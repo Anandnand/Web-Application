@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import com.example.demo.entity.Employee;
+
+public interface EmployeeService {
+
+	String addEmployee(Employee e);
+
+	Employee getEmployee(int id);
+
+	String updateEmployee(Employee e);
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>Employee Management Information</div>
+
+	<div>
+		<nav>
+			<a href="/api/nav/addEmployee">Add Employee</a> <a
+				href="/api/nav/updateEmployee">update Employee</a> <a
+				href="/api/nav/getEmployee">get Employee</a> <a
+				href="/api/nav/deleteEmployee">delete Employee</a>
+		</nav>
+	</div>
+	<div>
+		<h1>Employee  application </h1>
+	</div>
+
+	<div>
+		<nav>
+			<a href="/api/nav/addEmployee" target="_blank">Add Employee</a> <a
+				href="/api/nav/updateEmployee" target="_blank">update Employee</a> <a
+				href="/api/nav/getEmployee" target="_blank">get Employee</a> <a
+				href="/api/nav/deleteEmployee" target="_blank">delete Employee</a>
+		</nav>
+	</div>
+
+
+
+</body>
+</html>

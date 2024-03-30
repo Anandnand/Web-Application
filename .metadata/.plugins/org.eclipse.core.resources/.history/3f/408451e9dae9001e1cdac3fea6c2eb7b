@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<h1>Update the Product</h1>
+</div>
+<div id="container">
+<form action="/api/updateProduct" method="Put">
+<label>Enter the id</label>
+<input type="text" name="id" placeholder="Enter the id" class="pro"/>
+<br>
+<label>Enter the name</label>
+<input type="text" name="name" placeholder="Enter the name" class="pro"/>
+<br>
+<label>Enter the MFD</label>
+<input type="text" name="mfd" placeholder="Enter the mfd" class="pro"/>
+<br>
+<label>Enter the EFD</label>
+<input type="text" name="efd" placeholder="Enter the efd" class="pro"/>
+<br>
+<label>Enter the uses</label>
+<input type="text" name="uses" placeholder="Enter the uses" class="pro"/>
+<br>
+<input type="button" name=submit class="pro" value="submit"/>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h1>Student Administration</h1>
+	</div>
+	<div id="navcontainer">
+		<nav>
+			<a href="/api/nav/addStudent" target="_blank">Add Student</a> 
+			<a href="/api/nav/updateStudent" target="_blank">Update Student</a> 
+			<a href="/api/nav/deleteStudent" target="_blank">delete Student</a>
+			<a href="/api/nav/getStudent" target="_blank">get Student</a>
+		</nav>
+	</div>
+
+<div>
+<h1>Administration work</h1>
+</div>
+	<div id="box">
+		<a href="/api/nav/addStudent" target="_blank">Add Student</a> <br>
+		<a href="/api/nav/updateStudent" target="_blank">Update Student</a> <br>
+		<a href="/api/nav/deleteStudent" target="_blank">delete Student</a> <br>
+		<a href="/api/nav/getStudent" target="_blank">get Student</a>
+	</div>
+
+</body>
+</html>

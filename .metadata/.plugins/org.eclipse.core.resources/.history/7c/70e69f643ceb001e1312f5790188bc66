@@ -1,0 +1,52 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.demo.entity.Employee;
+import com.example.demo.service.EmployeeService;
+
+@Controller
+@RequestMapping(value="/api")
+public class EmployeeController {
+	@Autowired
+	EmployeeService es;
+
+	@PostMapping(value="/addEmployee")
+	public String addEmployee(@RequestParam("id") int id,@RequestParam("name") String name) {
+		Employee e=new Employee(id, name);
+		String msg=es.addEmployee(e);
+		return "msg";	
+	}
+	
+	@PutMapping(value="/updateEmployee")
+	public String updateEmployee(@RequestParam("id") int id,@RequestParam("name") String name) {
+		Employee e=es.getEmployee(id);
+          e.setName(name);
+		String msg=es.updateEmployee(e);
+		return "msg";	
+	}
+	
+	@GetMapping(value="/getEmployee")
+	public String getEmployee(@RequestParam("id") int id,Model model) {
+		Employee e=es.getEmployee(id);
+         model.addAttribute("Employee",e);
+		return "";	
+	}
+	
+	@DeleteMapping(value="/deleteEmployee")
+	public String deleteEmployee(@RequestParam("id") int id) {
+		String msg=es.deleteEmployee(id);
+		return "msg";	
+	}
+
+
+
+}

@@ -1,0 +1,10 @@
+spring.application.name=Login
+server.port=9090
+Spring.dataSource.url=jdbc:mysql://localhost:3306/
+Spring.dataSource.username=root
+Spring.dataSource.password=Anand5173@
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.mvc.hiddenmethod.filter.enabled=true
+

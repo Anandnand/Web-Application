@@ -1,0 +1,24 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Person;
+import com.example.demo.repository.PersonRepository;
+
+@Service
+public class PersonServiceImpl  implements PersonService {
+	@Autowired
+   PersonRepository pr;
+	
+	
+	@Override
+	public String addPerson(Person p) {
+		pr.save(p);
+		return "Person added successfully";
+	}
+	
+	
+	
+
+}

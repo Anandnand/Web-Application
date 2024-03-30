@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<table border>
+			<thead>
+				<tr>
+					<th>Id:</th>
+					<th>Name:</th>
+					<th>Email:</th>
+					<th>Number:</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr th:each=person:${person}>
+					<th th:each=${person.id}></th>
+					<th th:each=${person.name}></th>
+					<th th:each=${person.email}></th>
+					<th th:each=${person.number}></th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

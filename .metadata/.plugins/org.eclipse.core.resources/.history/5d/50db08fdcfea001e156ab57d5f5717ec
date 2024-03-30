@@ -1,0 +1,39 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepository;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+	@Autowired
+	StudentRepository sp;
+
+	@Override
+	public String addStudent(Student s) {
+		sp.save(s);
+		return "Student added successfully";
+	}
+
+	@Override
+	public Student getStudent(int id) {
+		return sp.findById(id).get();
+	}
+
+	@Override
+	public String updateStudent(Student s) {
+       sp.save(s);	
+		return  "Student id id updated";
+	}
+
+	@Override
+	public String deleteStudent(int id) {
+		sp.deleteById(id);
+		return "student deleted";
+	}
+	
+	
+
+}

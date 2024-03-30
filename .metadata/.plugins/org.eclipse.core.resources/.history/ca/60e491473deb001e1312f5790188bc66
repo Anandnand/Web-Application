@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>Employee Information</div>
+
+	<div>
+		<nav>
+			<a href="/api/nav/addEmployee">Add Employee</a> <a
+				href="/api/nav/updateEmployee">update Employee</a> <a
+				href="/api/nav/getEmployee">get Employee</a> <a
+				href="/api/nav/deleteEmployee">delete Employee</a>
+		</nav>
+	</div>
+
+
+</body>
+</html>

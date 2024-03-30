@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <div class="navbarcontainer">
+        <nav>
+            <a href="/api/nav/addStudent">Add Student Info</a>
+            <a href="/api/nav/viewInfo">View Student Info</a>
+            <a href="/api/nav/updateStudent">Update Student Info</a>
+            <a href="/api/nav/deleteStudent">Delete Student Info</a>
+        </nav>
+    </div>
+    <div class="heading">
+        <h2>Student Details..</h2>
+    </div>
+    <div class="tablecontainer">
+        <form>
+            <table border="5">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                </tr>
+                <tr>
+                    <td th:text="${student.id}"></td>
+                    <td th:text="${student.name}"></td>
+                    <td th:text="${student.branch}"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

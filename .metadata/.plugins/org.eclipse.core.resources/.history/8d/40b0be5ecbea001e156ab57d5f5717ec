@@ -1,0 +1,32 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(value="/api/nav")
+public class NavController {
+	
+	@GetMapping(value="/addStudent")
+	public String mapAdd() {
+		return "addStudent";
+	}
+	
+	@GetMapping(value="/updateStudent")
+	public String mapUpdate() {
+		return "updateStudent";
+	}
+	
+	@GetMapping(value="/deleteStudent")
+	public String mapDelete() {
+		return "deleteStudent";
+	}
+	
+	@GetMapping(value="/getStudent")
+	public String mapGet() {
+		return "getStudent";
+	}
+
+
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="index.css"/> 
+</head>
+<body id="home">
+
+<diV>
+<h1>Home page</h1>
+</diV>
+
+	<div class="navcontainer">
+		<nav >
+		<a href="/api/nav/addPerson" target="_blank" >Add Person</a>
+		<a href="/api/nav/updatePerson" target="_blank" >update Person</a>
+		<a href="/api/nav/deletePerson" target="_blank" >delete Person</a>
+		<a href="/api/nav/getPerson" target="_blank" >get Person</a>	
+		</nav>
+	</div>
+
+
+</body>
+</html>
